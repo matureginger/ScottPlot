@@ -606,16 +606,14 @@ namespace ScottPlot.Renderable
         /// </summary>
         public void RecalculateAxisSize()
         {
+            PixelSize = 0;
             if (Collapsed)
-            {
-                PixelSize = 0;
                 return;
-            }
 
             using (var tickFont = GDI.Font(AxisTicks.TickLabelFont))
             using (var titleFont = GDI.Font(AxisLabel.Font))
             {
-                PixelSize = 0;
+                //PixelSize = 0;
 
                 if (AxisLabel.IsVisible)
                     PixelSize += AxisLabel.Measure().Height;
