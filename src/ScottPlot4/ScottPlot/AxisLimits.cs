@@ -146,9 +146,9 @@ namespace ScottPlot
         public override int GetHashCode()
         {
             int A = XMin.GetHashCode();
-            int B = XMin.GetHashCode();
-            int C = XMin.GetHashCode();
-            int D = XMin.GetHashCode();
+            int B = XMax.GetHashCode();
+            int C = YMin.GetHashCode();
+            int D = YMax.GetHashCode();
             return A ^ B ^ C ^ D;
         }
     }
